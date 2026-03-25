@@ -1,2 +1,25 @@
-# Simple-calculator-
-A calculator is a basic tool used to perform simple mathematical operations. This one allows you to easily do
+# Simple Calculator in Python
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("Choose operation: +, -, *, /")
+operation = input("Enter operation: ")
+
+if operation == "+":
+    print("Result:", num1 + num2)
+
+elif operation == "-":
+    print("Result:", num1 - num2)
+
+elif operation == "*":
+    print("Result:", num1 * num2)
+
+elif operation == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Cannot divide by zero")
+
+else:
+    print("Invalid operation")
